@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package org.jboss.tools.example.springmvc.domain;
 
 import java.io.Serializable;
@@ -29,6 +25,9 @@ public class AmbulanceCall implements Serializable {
     @Column
     private String message;
     
+    @Column
+    private String status;
+    
     @ManyToOne
     @JoinColumn(name = "teamId")
     private EmergencyTeam team;
@@ -41,6 +40,14 @@ public class AmbulanceCall implements Serializable {
         this.message = message;
     }
 
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+    
     public EmergencyTeam getTeam() {
         return team;
     }

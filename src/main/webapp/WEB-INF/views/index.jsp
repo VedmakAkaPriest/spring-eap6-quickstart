@@ -15,13 +15,7 @@
 				<img src="<c:url value="/static/resources/gfx/dualbrand_logo.png"/>"/>
 			</div>
 			<div id="content">
-				<h1>Welcome to JBoss!</h1>
-
-				<div>
-					<p>You have successfully deployed a Spring MVC web application.</p>
-					<h3>Your application can run on:</h3>
-					<img src="<c:url value="/static/resources/gfx/dualbrand_as7eap.png"/>"/>
-				</div>
+				<h1>Welcome!</h1>
 
 				<form:form commandName="newMember" id="reg">
 					<h2>Member Registration</h2>
@@ -91,7 +85,7 @@
 					</c:otherwise>
 				</c:choose>
 			</div>
-			<div id="aside">
+<!--			<div id="aside">
 				<p>Learn more about JBoss Enterprise Application Platform 6.</p>
 				<ul>
 					<li><a
@@ -111,6 +105,7 @@
 			        	JBoss.<br />
 			    </p>
 			</div>
+-->
 		</div>
 	</body>
 </html>
